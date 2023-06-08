@@ -162,5 +162,4 @@ cython_debug/
 # DS_Store
 .DS_Store
 
-# Ignore large CSV file.
-*.csv
+
