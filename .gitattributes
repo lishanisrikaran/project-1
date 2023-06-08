@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 *.psd filter=lfs diff=lfs merge=lfs -text
+=======
+*.csv filter=lfs diff=lfs merge=lfs -text
+>>>>>>> c5c6343db5a75e592ba20e66681a5ca7ae698db5
