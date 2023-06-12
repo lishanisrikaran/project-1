@@ -41,6 +41,7 @@ Please see the file "road_fatalities - clean up process" for the full code.
 # Initial Exploration: Mapping Accidents
 
 Using hvplot.pandas, we plotted all accidents on a map visualisation to see the spread of accidents on a national level.
+
 <img width="822" alt="image" src="https://github.com/lishanisrikaran/project-1/assets/127614970/0bd821be-7280-4616-a7b3-04f6e0ad73bf">
 
 The map visualisation shows a higher concentration of datapoints in the Eastern half of the US as well as along the West Coast. After further research we determined that this aligned with the population density and National Highway Network of the US. It made sense that where population is higher and there are more extensive road networks, a larger number of accidents occur.
@@ -49,6 +50,23 @@ The map visualisation shows a higher concentration of datapoints in the Eastern 
 
 This analysis was performed by: Eimaan (Ash) Ejaz.
 
-There is a common assertion that younger drivers are more likely to cause road accidents, and we hoped to prove this empirically.
+There is a common assertion that younger drivers tend to cause more road accidents. We were hoping to prove this empirically by comparing the number of road accidents by the age of the driver and identifying any trends.
 
+For an initial exploration, a histogram was produced to determine the distribution of ages of drivers in our accident database.
+
+![image](https://github.com/lishanisrikaran/project-1/assets/127614970/c1934dec-d1ac-4251-bafa-e81bc0e8300f)
+
+The results show that the data is right-skewed, meaning there is a higher frequency of datapoints at the lower end of the age scale i.e. more accidents where the driver was younger.
+
+Since our data is right-skewed, the mode and median would be more representative of the average driver than the mean as they are less susceptible to outlier values. The calculated averages were as follows:
+
+- The Mean Age of drivers in accidents is 43
+- The Mode Age of drivers in accidents is 28
+- The Median Age of drivers in accidents is 40
+
+Here, the summary statistics support the assertion that road accidents are more often caused by younger drivers.
+
+We then performed a linear regression to explore the relationship between driver age and number of accidents and calculated the Pearson correlation coefficient for this relationship.
+
+![image](https://github.com/lishanisrikaran/project-1/assets/127614970/60761a74-d94a-4fac-9b9a-ec195f0b35ce)
 
