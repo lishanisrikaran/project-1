@@ -70,3 +70,10 @@ We then performed a linear regression to explore the relationship between driver
 
 ![image](https://github.com/lishanisrikaran/project-1/assets/127614970/60761a74-d94a-4fac-9b9a-ec195f0b35ce)
 
+[Ash to complete this section]
+
+# Q2: How do weather conditions and route impact the likelihood of fatalities? 
+
+This analysis was performed by: Savina Boateng.
+
+[Savina to complete]
