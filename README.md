@@ -102,19 +102,23 @@ This analysis was performed to examine the impact of weather conditions and spec
 
 Initially, a bar chart displaying the Distribution of Fatal Accidents by Weather Conditions was plotted.
 ![image](https://github.com/lishanisrikaran/project-1/assets/130323046/e5115309-f204-4c93-a5c1-2806cbe620c0)
+
 Most accidents occurred with clear weather conditions (almost 25000), compared to the other weather conditions outlined.
 
 The pie chart below shows the Distribution of Fatalities vs Visibility.
 ![image](https://github.com/lishanisrikaran/project-1/assets/130323046/8707745d-04e2-48b4-8b10-20d06d28b0ac)
+
 It is clearly shown that most fatalities (46.3%) occurred during the daylight. . This makes sense as during daylight hours is when the majority of the population are using motor transport to commute for their daily obligations. During these daily obligations, it is likely that people are not 100% focused on their driving, causing more fatalities to be recorded.
 
 Subsequently, a bar chart showing the Total Number of Fatal Accidents by Route Name was plotted.
 ![image](https://github.com/lishanisrikaran/project-1/assets/130323046/9ac949b3-2fbf-4434-a4fc-0af7b725ff87)
+
 It is seen that most fatalities (over 10000) occurred on the State Highway. State highways often experience a significant amount of traffic due to their role in connecting various cities, towns, and rural areas within a state. The increased volume of vehicles on these highways can contribute to a higher probability of accidents occurring. 
 
 Finally, two stacked bar charts (the first showing Fatal Accidents by Route Name and Weather Condition and the second showing Fata Accidents by Weather Conditions and Visibility) were plotted. 
 ![image](https://github.com/lishanisrikaran/project-1/assets/130323046/ce3fdf7d-fd0a-4a03-8ffb-b9dbdba46c02)
 ![image](https://github.com/lishanisrikaran/project-1/assets/130323046/8d7d2b57-5a11-4d0c-8ec2-3bbb58f1a845)
+
 Both stacked bar charts show that most fatalities occurred in clear weather conditions, during the daylight, as shown per our previous pie chart. This is probably due to the fact that most drivers would drive during daylight due to their jobs and various responsibilities, instead of times with dark visibility.
 
 In conclusion:
@@ -128,10 +132,12 @@ This analysis was performed by: Zeeshan Karim
 Initially, a line chart and bar chart showing the Hourly Distribution of Fatality Counts were plotted.
 ![image](https://github.com/lishanisrikaran/project-1/assets/130323046/fa3b3d33-6dfd-4cdc-be9b-8bc0b87dc46f)
 ![image](https://github.com/lishanisrikaran/project-1/assets/130323046/0fa7f403-47f7-4cf7-9490-a270c8b56033)
+
 A steady increase in the number of fatalities is observed between hours 10 and 18, with most fatalities occurring between the hours 18 to 22. 
 
 Subsequently, a bar chart showing the Number of Fatalities per State (filtered to the Top 5) was plotted.
 ![image](https://github.com/lishanisrikaran/project-1/assets/130323046/7c2a06ac-863b-476d-875b-1b781e0fea50)
+
 The bar chart shows that California has the highest number of fatalities, followed by Texas. These findings are congruent with the Map of Accidents shown in #Q1.
 
 In conclusion:
@@ -147,6 +153,7 @@ The null hypothesis for this question is the increasing speed limit of a road do
 
 Initially, the speed limit data’s distribution was observed using a histogram.
 ![image](https://github.com/lishanisrikaran/project-1/assets/130323046/02895394-79c2-4505-8511-55ffa5e997b0)
+
 A bell shaped curve structure is followed, showing normal distribution. This is also supported by the following findings:
 - Roughly 68% of the recorded road incidents occurred between 33.19MPH and 67.27MPH.
 - Roughly 95% of the recorded road incidents occurred between 16.15MPH and 84.31MPH.
@@ -155,18 +162,22 @@ A bell shaped curve structure is followed, showing normal distribution. This is 
 A box plot was also plotted, virtually showing the same mean and median.
 ![image](https://github.com/lishanisrikaran/project-1/assets/130323046/5b25eeef-fe9c-4f28-ae88-b1ddeee9fa43)
 ![image](https://github.com/lishanisrikaran/project-1/assets/130323046/d0672d8f-4b07-4eb3-830a-1b4476d7e909)
+
 It can be seen that on average a road accident is most likely to occur at 50MPH,  due to the data being normally distributed. 
 
 Next, a scatter chart was plotted showing speed limit versus fatality counts.
 ![image](https://github.com/lishanisrikaran/project-1/assets/130323046/d9c0c705-2fb2-4f9b-9d9e-a66617d47639)
+
 The correlation coefficient calculated was 0.1, indicating a very weak linear correlation. An increase of one MPH in the speed limit corresponds to a increase of 14 additional fatalities which is very insignificant when observing on a nationwide scale. 
 
 Although the scatter plot did not indicate a linear relationship, when the speed limits are grouped, as shown below, it is seen that most incidents occurred between the two middle groups, therefore, there is still some correlation, even though not linear.
 ![image](https://github.com/lishanisrikaran/project-1/assets/130323046/df2c3564-4978-4383-959b-24b513110e54)
+
 The probable reason a linear regression is not followed could be due to less roads present with higher speed limits, so the cumulative fatality counts recorded are lower. A Bragg’s function regression would help regress values better. 
 
 Finally, an Anova t-test was performed, confirming that the median of speed limits does increase up until a certain point. 
 ![image](https://github.com/lishanisrikaran/project-1/assets/130323046/c57f1f9e-bc1e-4ca7-808f-ec1314016b2e)
+
 However, the computed p value is below the significance level of 0.05 and therefore, the null hypothesis could be rejected.
 
 In conclusion:
