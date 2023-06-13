@@ -36,7 +36,13 @@ The data clean-up process involved the following steps:
 - The data types of the "age" and "speed limit" were converted from float to integer values.
 - The columns were renamed to be more self-explanatory.
 
-Please see the file "road_fatalities - clean up process" for the full code.
+# Files
+
+- The clean-up can be found in the file titled "road_fatalities - clean up process.ipynb"
+- The full analysis can be found in the file titled "road_fatalities - final.ipynb"
+- The .csv file utilised is located in the "source_data" folder.
+- All graphs and charts created during the analysis can be found in the "output_data" folder.
+- The presentation used is titled <INSERT>
 
 # Initial Exploration: Mapping Accidents
 
