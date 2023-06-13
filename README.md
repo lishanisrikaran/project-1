@@ -42,7 +42,7 @@ The data clean-up process involved the following steps:
 - The full analysis can be found in the file titled "road_fatalities - final.ipynb"
 - The .csv file utilised is located in the "source_data" folder.
 - All graphs and charts created during the analysis can be found in the "output_data" folder.
-- The presentation used is titled <INSERT>
+- The presentation used is titled "Road Fatalities.ppt".
 
 # Initial Exploration: Mapping Accidents
 
