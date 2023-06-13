@@ -73,8 +73,7 @@ Since our data is right-skewed, the mode and median would be more representative
 Here, the summary statistics support the assertion that road accidents are more often caused by younger drivers.
 
 We then performed a linear regression to explore the relationship between driver age and number of accidents and calculated the Pearson correlation coefficient for this relationship.
-
-![image](https://github.com/lishanisrikaran/project-1/assets/127614970/60761a74-d94a-4fac-9b9a-ec195f0b35ce)
+![age_scatter_api](https://github.com/lishanisrikaran/project-1/assets/130323046/09e389d1-a74a-4ff8-acde-506e71eed321)
 
 The regression showed a strong negative correlation between driver age and the number of accidents, supported by the Pearson correlation coefficient value of r = -0.94. This does support the assertion that younger drivers cause the highest number of accidents.
 
