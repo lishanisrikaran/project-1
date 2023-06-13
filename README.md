@@ -25,7 +25,9 @@ API: https://crashviewer.nhtsa.dot.gov/CrashAPI
 CSV Archives: https://www.nhtsa.gov/file-downloadsp=nhtsa/downloads/FARS/2021/National/
 
 We were unable to make API requests without providing additional filters which would have reduced the size of the dataset - this is explored later in the analysis. For this reason we decided to utilise the CSV file instead.
-![Screenshot 2023-06-12 at 21 14 51](https://github.com/lishanisrikaran/project-1/assets/127614970/6840adda-4a2a-40c6-aa9f-e94f0bec7a7b)
+
+![screenshot_2023-06-12_at_21 14 51_720](https://github.com/lishanisrikaran/project-1/assets/130323046/1da95830-d7b2-45af-a87e-9315e83a0a38)
+
 
 # Data Clean-up
 
@@ -48,7 +50,8 @@ The data clean-up process involved the following steps:
 
 Using hvplot.pandas, we plotted all accidents on a map visualisation to see the spread of accidents on a national level.
 
-<img width="822" alt="image" src="https://github.com/lishanisrikaran/project-1/assets/127614970/0bd821be-7280-4616-a7b3-04f6e0ad73bf">
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/8dff1daa-1a11-417b-944d-87050e0f4d97)
+
 
 The map visualisation shows a higher concentration of datapoints in the Eastern half of the US as well as along the West Coast. After further research we determined that this aligned with the population density and National Highway Network of the US. It made sense that where population is higher and there are more extensive road networks, a larger number of accidents occur.
 
@@ -60,7 +63,8 @@ There is a common assertion that younger drivers tend to cause more road acciden
 
 For an initial exploration, a histogram was produced to determine the distribution of ages of drivers in our accident database.
 
-![image](https://github.com/lishanisrikaran/project-1/assets/127614970/c1934dec-d1ac-4251-bafa-e81bc0e8300f)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/2c56e14f-865b-4be1-9f05-ab40aa1999ed)
+
 
 The results show that the data is right-skewed, meaning there is a higher frequency of datapoints at the lower end of the age scale i.e. more accidents where the driver was younger.
 
@@ -74,8 +78,7 @@ Here, the summary statistics support the assertion that road accidents are more 
 
 We then performed a linear regression to explore the relationship between driver age and number of accidents and calculated the Pearson correlation coefficient for this relationship.
 
-![image](https://github.com/lishanisrikaran/project-1/assets/127614970/cfcf9b1c-484c-4b78-8191-15a2af310d43)
-
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/f05f0dff-16fe-4185-ad23-3f5a8d67f9aa)
 
 The regression showed a strong negative correlation between driver age and the number of accidents, supported by the Pearson correlation coefficient value of r = -0.94. This does support the assertion that younger drivers cause the highest number of accidents.
 
@@ -83,7 +86,7 @@ However, it is important to note that the number of accidents per age group is i
 
 For the final part of the analysis for this question, the ages were grouped and summary percentages were calculated for each age group, as seen by  the pie chart below:
 
-![image](https://github.com/lishanisrikaran/project-1/assets/127614970/3213b114-c3b6-410d-9432-33c06043a321)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/9df99d0d-2b32-47b4-ab4e-3ac0af03b97c)
 
 We were able to show that younger drivers cause the greatest number of accidents, with drivers aged 16-35 contributing to almost half of all road accidents. The most common age among drivers involved in road accidents was 28 and the 26-35 year old age group contributed to the greatest percentage of accidents.
 
@@ -102,23 +105,24 @@ This analysis was performed by: Savina Boateng.
 This analysis was performed to examine the impact of weather conditions and specific routes on the number of fatalities.
 
 Initially, a bar chart displaying the Distribution of Fatal Accidents by Weather Conditions was plotted.
-![image](https://github.com/lishanisrikaran/project-1/assets/130323046/e5115309-f204-4c93-a5c1-2806cbe620c0)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/ee17f863-e04e-46cd-bb8a-a20758380696)
 
 Most accidents occurred with clear weather conditions (almost 25000), compared to the other weather conditions outlined.
 
 The pie chart below shows the Distribution of Fatalities vs Visibility.
-![image](https://github.com/lishanisrikaran/project-1/assets/130323046/8707745d-04e2-48b4-8b10-20d06d28b0ac)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/d67a7d04-1b91-4aab-9a2c-1b3d1d0acf72)
 
 It is clearly shown that most fatalities (46.3%) occurred during the daylight. . This makes sense as during daylight hours is when the majority of the population are using motor transport to commute for their daily obligations. During these daily obligations, it is likely that people are not 100% focused on their driving, causing more fatalities to be recorded.
 
 Subsequently, a bar chart showing the Total Number of Fatal Accidents by Route Name was plotted.
-![image](https://github.com/lishanisrikaran/project-1/assets/130323046/9ac949b3-2fbf-4434-a4fc-0af7b725ff87)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/2eb7a699-7c8d-417c-af09-d0642917f386)
 
 It is seen that most fatalities (over 10000) occurred on the State Highway. State highways often experience a significant amount of traffic due to their role in connecting various cities, towns, and rural areas within a state. The increased volume of vehicles on these highways can contribute to a higher probability of accidents occurring. 
 
 Finally, two stacked bar charts (the first showing Fatal Accidents by Route Name and Weather Condition and the second showing Fata Accidents by Weather Conditions and Visibility) were plotted. 
-![image](https://github.com/lishanisrikaran/project-1/assets/130323046/ce3fdf7d-fd0a-4a03-8ffb-b9dbdba46c02)
-![image](https://github.com/lishanisrikaran/project-1/assets/130323046/8d7d2b57-5a11-4d0c-8ec2-3bbb58f1a845)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/3b83b5a2-2fe6-44eb-b965-111dd57785e6)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/70b0e8c3-583b-4e19-8ad3-01f0cfb8afff)
+
 
 Both stacked bar charts show that most fatalities occurred in clear weather conditions, during the daylight, as shown per our previous pie chart. This is probably due to the fact that most drivers would drive during daylight due to their jobs and various responsibilities, instead of times with dark visibility.
 
@@ -131,13 +135,13 @@ In conclusion:
 This analysis was performed by: Zeeshan Karim
 
 Initially, a line chart and bar chart showing the Hourly Distribution of Fatality Counts were plotted.
-![image](https://github.com/lishanisrikaran/project-1/assets/130323046/fa3b3d33-6dfd-4cdc-be9b-8bc0b87dc46f)
-![image](https://github.com/lishanisrikaran/project-1/assets/130323046/0fa7f403-47f7-4cf7-9490-a270c8b56033)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/e54baf59-77bb-4740-9f97-a9c68ea1b5ce)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/15c57663-39dd-4253-bba0-9b78a8381867)
 
 A steady increase in the number of fatalities is observed between hours 10 and 18, with most fatalities occurring between the hours 18 to 22. 
 
 Subsequently, a bar chart showing the Number of Fatalities per State (filtered to the Top 5) was plotted.
-![image](https://github.com/lishanisrikaran/project-1/assets/130323046/7c2a06ac-863b-476d-875b-1b781e0fea50)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/080a3486-cfb6-442a-9657-d84ae2062051)
 
 The bar chart shows that California has the highest number of fatalities, followed by Texas. These findings are congruent with the Map of Accidents shown in #Q1.
 
@@ -153,7 +157,7 @@ This analysis was performed by: Lishani Srikaran
 The null hypothesis for this question is the increasing speed limit of a road does not affect the likelihood of an individual experiencing a fatal road accident. 
 
 Initially, the speed limit data’s distribution was observed using a histogram.
-![image](https://github.com/lishanisrikaran/project-1/assets/130323046/02895394-79c2-4505-8511-55ffa5e997b0)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/f012bd79-e297-47a7-ace6-2a48d6811552)
 
 A bell shaped curve structure is followed, showing normal distribution. This is also supported by the following findings:
 - Roughly 68% of the recorded road incidents occurred between 33.19MPH and 67.27MPH.
@@ -161,23 +165,24 @@ A bell shaped curve structure is followed, showing normal distribution. This is 
 - Roughly 99.7% of the recorded road incidents occurred between 0.89MPH and 101.35MPH.
 
 A box plot was also plotted, virtually showing the same mean and median.
-![image](https://github.com/lishanisrikaran/project-1/assets/130323046/5b25eeef-fe9c-4f28-ae88-b1ddeee9fa43)
-![image](https://github.com/lishanisrikaran/project-1/assets/130323046/d0672d8f-4b07-4eb3-830a-1b4476d7e909)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/bd94b261-00c7-4373-af16-a3407fd2086d)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/a18d7066-ad04-4706-b9c2-d9f2e2a66180)
 
 It can be seen that on average a road accident is most likely to occur at 50MPH,  due to the data being normally distributed. 
 
 Next, a scatter chart was plotted showing speed limit versus fatality counts.
-![image](https://github.com/lishanisrikaran/project-1/assets/130323046/d9c0c705-2fb2-4f9b-9d9e-a66617d47639)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/42816192-3a8b-4ab8-b645-9562b4fb09cf)
 
 The correlation coefficient calculated was 0.1, indicating a very weak linear correlation. An increase of one MPH in the speed limit corresponds to a increase of 14 additional fatalities which is very insignificant when observing on a nationwide scale. 
 
 Although the scatter plot did not indicate a linear relationship, when the speed limits are grouped, as shown below, it is seen that most incidents occurred between the two middle groups, therefore, there is still some correlation, even though not linear.
-![image](https://github.com/lishanisrikaran/project-1/assets/130323046/df2c3564-4978-4383-959b-24b513110e54)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/d28570f9-7646-4ebf-ab27-cc5b82c00a9c)
+
 
 The probable reason a linear regression is not followed could be due to less roads present with higher speed limits, so the cumulative fatality counts recorded are lower. A Bragg’s function regression would help regress values better. 
 
 Finally, an Anova t-test was performed, confirming that the median of speed limits does increase up until a certain point. 
-![image](https://github.com/lishanisrikaran/project-1/assets/130323046/c57f1f9e-bc1e-4ca7-808f-ec1314016b2e)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/bc036fdc-3834-497f-befb-9ea18c8263a0)
 
 However, the computed p value is below the significance level of 0.05 and therefore, the null hypothesis could be rejected.
 
@@ -192,6 +197,13 @@ In conclusion:
 - Stricter driving examination for those applying for licenses.
 - Implementation of a nation-wide minimum driving age (18).
 - Improve policy development.
+
+# Additional findings
+
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/159a1966-c9d2-44fd-a1b8-276f0accb1b5)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/c91fcc4d-ccc6-4a70-b3d3-1a5df2751424)
+![image](https://github.com/lishanisrikaran/project-1/assets/130323046/a86d3575-67f1-4f23-9953-57870ddbcd9a)
+
 
 # PLEASE NOTE
 
