@@ -36,7 +36,13 @@ The data clean-up process involved the following steps:
 - The data types of the "age" and "speed limit" were converted from float to integer values.
 - The columns were renamed to be more self-explanatory.
 
-Please see the file "road_fatalities - clean up process" for the full code.
+# Files
+
+- The clean-up can be found in the file titled "road_fatalities - clean up process.ipynb"
+- The full analysis can be found in the file titled "road_fatalities - final.ipynb"
+- The .csv file utilised is located in the "source_data" folder.
+- All graphs and charts created during the analysis can be found in the "output_data" folder.
+- The presentation used is titled <INSERT>
 
 # Initial Exploration: Mapping Accidents
 
@@ -70,7 +76,23 @@ We then performed a linear regression to explore the relationship between driver
 
 ![image](https://github.com/lishanisrikaran/project-1/assets/127614970/60761a74-d94a-4fac-9b9a-ec195f0b35ce)
 
-[Ash to complete this section]
+The regression showed a strong negative correlation between driver age and the number of accidents, supported by the Pearson correlation coefficient value of r = -0.94. This does support the assertion that younger drivers cause the highest number of accidents.
+
+However, it is important to note that the number of accidents per age group is influenced by the number of drivers for each age group. For example, though a relatively small number of accidents are caused by drivers over the age of 80, this may be due to the fact that there are likely very few drivers on the road that are over the age of 80. We can also see this for the 16 and 17 year old age groups. As 16 and 17 year olds are younger than 18+ year olds, we would expect them to involved in a greater number of accidents than 18+ year olds, however the opposite is the case in this analysis. We determined that this is due to there being a smaller number of drivers aged 16 and 17 than drivers over the age of 18 as the minimum driving age varies by state and not all states allow under 18s to drive.
+
+For the final part of the analysis for this question, the ages were grouped and summary percentages were calculated for each age group, as seen by  the pie chart below:
+
+![image](https://github.com/lishanisrikaran/project-1/assets/127614970/3213b114-c3b6-410d-9432-33c06043a321)
+
+We were able to show that younger drivers cause the greatest number of accidents, with drivers aged 16-35 contributing to almost half of all road accidents. The most common age among drivers involved in road accidents was 28 and the 26-35 year old age group contributed to the greatest percantage of accidents.
+
+We can conclude that further research is necessary to determine whether the number of accidents per age group is representative of the population of drivers for each age group, and which factors may influence the rate of road accidents for different age groups.
+
+The following recommendations could also be made from the results of our analysis:
+
+Increased education including targeted interventions may be necessary for younger drivers or newer drivers.
+Stricter driving examinations could be enforced for individuals seeking to get their driving license.
+A consistent, nation-wide minimum driving age limit may be benefical to reduce the number of younger drivers on the road
 
 # Q2: How do weather conditions and route impact the likelihood of fatalities? 
 
